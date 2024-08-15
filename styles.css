@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #800080;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.acerca-de-mi {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    background-color: #f3e5f5;
+    flex-direction: column;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.acerca-de-mi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content h3, .text-content h4 {
+    color: #6a1b9a;
+}
+
+.text-content p {
+    margin: 1rem 0;
+}
+
+.btn-cv {
+    display: inline-block;
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: #8e24aa;
+}
+
+.mission-vision {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.mission-vision .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+
+.skills-section,
+.projects-section,
+.certifications-section,
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 3rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.skills-section h3,
+.projects-section h3,
+.certifications-section h3,
+.contact-section h3 {
+    color: white;
+    background-color: #800080;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.skills-container,
+.projects-container,
+.certifications-container,
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill-item,
+.project-item,
+.certification-item,
+.contact-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.skill-item img,
+.project-item img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.skill-item:hover,
+.project-item:hover,
+.certification-item:hover,
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #800080;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #5c005c;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .acerca-de-mi-container,
+    .skills-container,
+    .projects-container,
+    .certifications-container,
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item,
+    .project-item,
+    .certification-item,
+    .contact-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
